@@ -14,6 +14,7 @@ from cities import cities
 origin = 'Arad'
 destination = 'Bucharest'
 
-uniformCost(origin, destination, cities)
+breadthFirst(origin, destination, cities)
+# uniformCost(origin, destination, cities)
 
 

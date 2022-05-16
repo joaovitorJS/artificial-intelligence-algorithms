@@ -14,5 +14,5 @@
 
 Para executar basta ter o python3 em seu computador e rodar no terminal:
 ```bash
-  python3 main.py
+$ python3 main.py
 ```

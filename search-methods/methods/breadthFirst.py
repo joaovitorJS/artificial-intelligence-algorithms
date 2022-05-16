@@ -7,7 +7,6 @@
 def breadthFirst(origin, destination, nodes):
   visited = set()  # Conjunto dos nós visitados
   queue = []    # Fila
-  pathTraveled = [origin]
 
   queue.insert(0, origin)
   visited.add(origin) # Visitou o nó
@@ -16,9 +15,8 @@ def breadthFirst(origin, destination, nodes):
     currentNodeKey = queue.pop()
 
     if (currentNodeKey == destination):
-      if (neighbourKey not in pathTraveled):
-          pathTraveled.append(neighbourKey)
-      return pathTraveled
+      print("Cidade encontrada!")      
+      return True
       
     currentNode = next((sub for sub in nodes if sub.get(currentNodeKey)), None)
   
@@ -28,9 +26,6 @@ def breadthFirst(origin, destination, nodes):
       if (neighbourKey not in visited):
         queue.insert(0, neighbourKey)
         visited.add(neighbourKey)
-        if (neighbourKey not in pathTraveled):
-          pathTraveled.append(neighbourKey)
 
-        # print(neighbour)
-    # print('\n')
-  return []
+  print("Cidade não Encontrada")
+  return False
