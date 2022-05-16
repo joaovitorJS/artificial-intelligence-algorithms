@@ -85,7 +85,7 @@ def uniformCost(originKey, destinationKey, nodes):
           print("Caminho não encontrado! As cidade estão correta?")
           return False
       else:
-          path.insert(0, currentNode)
+          path.insert(0, currentNode) 
           currentNode = previous[currentNode]
   path.insert(0, originKey)
 

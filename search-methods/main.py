@@ -8,13 +8,15 @@
 
 from methods.breadthFirst import breadthFirst
 from methods.uniformCost import uniformCost
+from methods.depthFirst import depthFirst
 from cities import cities
 
 
 origin = 'Arad'
 destination = 'Bucharest'
 
-breadthFirst(origin, destination, cities)
+# breadthFirst(origin, destination, cities)
 # uniformCost(origin, destination, cities)
+depthFirst(origin, destination, cities)
 
 
