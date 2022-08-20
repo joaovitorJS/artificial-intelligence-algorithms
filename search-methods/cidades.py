@@ -10,7 +10,7 @@
 
 
 # Estrutura do conjunto de cidades
-cities = [
+cidades = [
   {
     'Arad': [
       {'Zerind': 75},
@@ -137,4 +137,28 @@ cities = [
       {'Iasi': 87}
     ]
   }
+]
+
+
+heuristicaAradBuscharest = [
+  {'Arad': 366},
+  {'Zerind':  374},
+  {'Sibiu': 253},
+  {'Timisoara': 329},
+  {'Oradea': 380},
+  {'Rimnicu Vilcea': 193},
+  {'Fagaras': 178},
+  {'Lugoj': 244},
+  {'Pitesti': 98},
+  {'Craiova': 160},
+  {'Bucharest': 0},
+  {'Mehadia': 241},
+  {'Giurgiu': 77},
+  {'Urziceni': 80},
+  {'Dobreta': 242},
+  {'Hirsova': 151},
+  {'Vaslui': 199},
+  {'Eforie': 161},
+  {'Iasi': 226},
+  {'Neamt': 234}
 ]

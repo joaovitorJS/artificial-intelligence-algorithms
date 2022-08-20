@@ -12,10 +12,10 @@ import time
 
 # constantes
 RANDOM_SEED = None
-TEMPERATURA_INICIAL = 100
-TEMPERATURA_PARADA = 0.00005
-NUMERO_ITERACOES = 50
-FATOR_REDUCAO = 0.999999
+TEMPERATURA_INICIAL = 373
+TEMPERATURA_PARADA = 0.005
+NUMERO_ITERACOES = 20
+FATOR_REDUCAO = 0.99999
 
 #***********************************************************************#
 # funções 
@@ -99,7 +99,7 @@ def plotInicial(conjuntoCidades, axInicial):
   # Plot da configuração inicial
   axInicial.plot(listaCidadesX, listaCidadesY, color='c', marker='o', linewidth=1, markersize=6, markerfacecolor='r', markeredgecolor='m')
   energiaInicial = calculaEnergia(conjuntoCidades)
-  axInicial.set_title(f'Configuração Inicial\nEnergia: {energiaInicial}')
+  axInicial.set_title(f'Configuração Inicial\nEnergia: {energiaInicial}\nTemperatura: {TEMPERATURA_INICIAL}')
 
   listaCidadesX.pop(numeroCidades-1)
   listaCidadesY.pop(numeroCidades-1)
@@ -262,6 +262,7 @@ manager = plt.get_current_fig_manager()
 manager.full_screen_toggle()
 
 plt.ion()
+
 
 fig.show()
 fig.canvas.draw() 
