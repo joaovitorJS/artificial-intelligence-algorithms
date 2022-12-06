@@ -13,7 +13,7 @@ import pandas as pd # Usado para DataFrame
 
 
 # Constantes/Parâmetros
-RANDOM_SEED = 111
+RANDOM_SEED = None
 
 NUMERO_CIDADES = 20
 NUMERO_POPULACAO = 100
@@ -331,6 +331,9 @@ plotInicial(configInicialCidade, ax[0])
 fig.suptitle("Algoritmo Genético - Problema do caixeiro viajante\n João Vitor de Oliveira", fontsize=16)
 fig.tight_layout()
 
+# Deixar em tela cheia
+manager = plt.get_current_fig_manager()
+manager.full_screen_toggle()
 
 plt.ion()
 
