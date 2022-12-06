@@ -7,15 +7,15 @@ João Vitor de Oliveira
 Para executar basta ter o python3 em seu computador e rodar no terminal:
 $ python3 genetic-algorithm.py numero_de_cidades
 
-Para o Algoritmo de busca primeiro na largura
-$ python3 genetic-algorithm.py 20 
+Exemplo:
+```bash
+python3 genetic-algorithm.py 20 
+```
+------ Ou, apenas -------
 
------- Ou -------
-
-Apenas
-
-$ python3 genetic-algorithm.py
-
+```bash
+python3 genetic-algorithm.py
+```
 
 ## Requisitos
 
